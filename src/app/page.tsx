@@ -1,42 +1,52 @@
 "use client";
 
+import { SotialMedia } from "@/components/SotialMedia";
+import { mediaList } from "@/data/mediaList";
+
 const Page = () => {
+  const name = 'Desenvolvedor de software';
+
   return (
-    <div className="bg-black/90 m-auto flex flex-col justify-between ">
+    <div className="bg-black flex flex-col justify-between">
       
-        <nav className="flex justify-between px-10 py-10">
-          <div className="text-purple-900">Marlon Santos</div>
-          <div className="">
-            <img src="./assets/n1.png" alt="logo" className="w-40 h-40"/>
-          </div>
-          <div className="">
-            <img src="/assets/burger.svg" alt="" className="w-12 h-12"/>
-          </div>
+      <div className="container m-auto">
+
+        <nav className="flex justify-between ">
+          <div className="text-gray-600 flex items-center">{name}</div>
+            <div className="">
+              <img src="/assets/noob1.png" alt="logo" className="w-40 h-40"/>
+            </div>
+            <div className="flex items-center">
+              <span className="text-gray-600 hover:opacity-70 cursor-pointer">Menu</span>
+              <img src="/assets/burger.svg" alt="" className="w-12 h-12 cursor-pointer hover:opacity-70"/>
+            </div>
         </nav>
 
-      <div className="flex flex-col h-screen">
+      <div className="flex m-auto flex-col h-screen border">
         
-        <div className="flex justify-end px-70">
+        <div className="flex justify-end px-60 ">
           <div className="">
-            <img src="" alt="photo" className="w-60 h-60 rounded-full border flex justify-center items-center"/>
+            <img src="/assets/eu.png" alt="photo" className="h-60 flex justify-center items-center"/>
           </div>
         </div>
         
-        <div className="flex justify-between">
-          <div className="rotate-90">
-            <ul className="flex gap-8">
-              <li>Linkedi</li>
-              <li>Instagram</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
+        <div className="flex justify-between w-full ">
+           <SotialMedia media={mediaList} />
           
-          <div className="">
-              <div className="border">------</div>
+          <div className="border relative w-full rounded-md">
+              <div className="absolute -top-8 left-10 text-5xl text-[#3f3f3f]">
+               <div className="">
+                 <span className="text-white">Marlon Santos</span>
+               </div>
+                
+              </div>
           </div>
 
-          <p className="rotate-90 tracking-tighter">Desenvolver De Software</p>
+          <div className=" rotate-90 tracking-tighter  text-[#390082] ">
+            <img src="./assets/noob1.png" alt="logo" className="w-40 h-40"/>
+          </div>
         </div>
+      </div>
       </div>
     </div>
   );
