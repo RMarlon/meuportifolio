@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 
@@ -11,6 +12,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+   --font-display: "Winky Rough", "sans-serif";
+}
+
+@font-face {
+  font-family: "Winky Rough";
+  src: url("/assets/fonts/WinkyRough-VariableFont_wght.ttf")format("opentype");
+  font-style: normal;
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {

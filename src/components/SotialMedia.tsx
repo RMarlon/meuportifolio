@@ -6,14 +6,14 @@ type Props = {
 
 export const SotialMedia = ({media}: Props) =>{
     return(
-        <div>
-          <div className="px-4">
+        <div className="pr-14 flex items-center justify-center">
+          <div className="">
             <ul> 
                 <li>
-                    <div>
+                    <div className="">
                         {media.map(item => (
                             <a href={item.url} key={item.id} target="_blank">
-                                <img src={item.img} className="w-8 mt-4 hover:opacity-70"/>
+                                <img src={item.img} className="w-6 ml-10 pt-7 duration-300 hover:opacity-70"/>
                             </a>
                         ))}
                     </div>
