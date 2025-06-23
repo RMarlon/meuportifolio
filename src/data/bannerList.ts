@@ -4,9 +4,9 @@ export const bannerList: Banner[] = [
     {
         id:1,
         description: [
-            'Olá',
+            'Olá,',
             'Eu sou',
-            'Desenvolvedor De Software'
+            'Um Programador'
         ],
         button: 'Contate-me'
     }

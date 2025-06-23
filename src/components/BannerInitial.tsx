@@ -9,7 +9,7 @@ export const BannerInitial = ({banner}:Props) =>{
         <div className="font-display font-bold">
            {banner.map(item =>(
             <>
-                <div key={item.id}>
+                <div key={item.id} className="py-10">
                     <span className="text-6xl text-[#390082]">{item.description[0]}</span>
                     <p className="text-6xl text-[#390082]">{item.description[1]}</p>
                     <p className="text-7xl uppercase py-10 text-gray-700"> {item.description[2]}</p>
